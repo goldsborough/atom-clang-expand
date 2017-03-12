@@ -3,5 +3,6 @@ int f(int x) {
 }
 
 int main() {
-  int foo = ´f(5);
+	int x = 234;
+  int foo = f(5);
 }
