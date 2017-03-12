@@ -1,0 +1,5 @@
+{
+  "atom-workspace atom-text-editor[data-grammar~='cpp']": {
+    "alt-e": "atom-clang-expand:expand"
+  }
+}

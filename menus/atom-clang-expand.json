@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-clang-expand",
+        "command": "atom-clang-expand:expand"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-clang-expand",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-clang-expand:expand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

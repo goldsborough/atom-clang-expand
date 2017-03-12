@@ -1,0 +1,23 @@
+installedESLint: true
+
+extends:
+  - google
+
+parserOptions:
+  sourceType: module
+  ecmaVersion: 6
+
+env:
+  browser: true
+  node: true
+  jasmine: true
+
+rules:
+  arrow-parens: off
+  no-var: warn
+  max-statements-per-line: off
+  brace-style:
+    - error
+    - 1tbs
+    - allowSingleLine: true
+  comma-dangle: off

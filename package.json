@@ -1,0 +1,18 @@
+{
+  "name": "atom-clang-expand",
+  "main": "./lib/atom-clang-expand",
+  "version": "0.0.0",
+  "description": "Expand functions, methods and macros in C and C++.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-clang-expand:expand"
+  },
+  "repository": "https://github.com/goldsborough/atom-clang-expand",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
