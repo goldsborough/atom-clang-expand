@@ -2,8 +2,33 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-clang-expand",
-        "command": "atom-clang-expand:expand"
+        "label": "Atom Clang Expand",
+        "submenu": [
+          {
+            "label": "Show Definition",
+            "command": "atom-clang-expand:show-definition"
+          },
+          {
+            "label": "Show Declaration",
+            "command": "atom-clang-expand:show-declaration"
+          },
+          {
+            "label": "Go To Definition",
+            "command": "atom-clang-expand:go-to-definition"
+          },
+          {
+            "label": "Go To Declaration",
+            "command": "atom-clang-expand:go-to-declaration"
+          },
+          {
+            "label": "Expand",
+            "command": "atom-clang-expand:expand"
+          },
+          {
+            "label": "Unexpand",
+            "command": "atom-clang-expand:unexpand"
+          }
+        ]
       }
     ]
   },
