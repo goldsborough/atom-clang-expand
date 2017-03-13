@@ -1,12 +1,9 @@
-int f(int x) {
-  return x + 1;
-}
-// http://google.com
+#include "/Users/goldsborough/Downloads/foo.h"
+
 int main() {
-	int x = 234;
+  int x = 234;
+
   int foo = f(5);
-}
-int adfsad() {
-	int x = 234;
-  int foo = f(5);
+
+  return x + foo;
 }
