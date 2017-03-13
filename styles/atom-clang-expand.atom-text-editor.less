@@ -5,6 +5,57 @@
 @import "ui-variables";
 
 .clang-expand-highlight {
-    background: @background-color-highlight;
-    color: @text-color-highlight;
+  background: @background-color-highlight;
+  color: @text-color-highlight;
+}
+@row-line-height: 2em;
+@item-side-padding: 0.6em;
+@line-height: 1.3;
+
+.clang-expand-source-view-container {
+  align-items: left;
+  flex-direction: column;
+  background: lighten(@base-background-color, 2%);
+  border-radius: @component-border-radius;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 6px;
+}
+
+.clang-expand-source-view-code {
+  // max-height: @font-size * @line-height * 20;
+  max-width: 800px;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+  margin-bottom: 8px;
+  counter-reset: line;
+  line-height: 0;
+
+  span {
+    display: block;
+    line-height: 1.5;
+
+    &:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid @overlay-border-color;
+      padding-right: 0.5em;
+      margin-right: 0.5em;
+      color: @text-color-subtle;
+    }
+  }
+}
+
+.clang-expand-source-view-info {
+  text-align: center;
+
+  a {
+    color: @text-color-success;
+    text-decoration: underline;
+  }
+}
+
+atom-overlay {
+  opacity: 0.95;
 }

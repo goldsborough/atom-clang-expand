@@ -16,6 +16,9 @@ rules:
   arrow-parens: off
   no-var: warn
   max-statements-per-line: off
+  max-len:
+    - error
+    - 100
   brace-style:
     - error
     - 1tbs
