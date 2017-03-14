@@ -24,3 +24,4 @@ rules:
     - 1tbs
     - allowSingleLine: true
   comma-dangle: off
+  valid-jsdoc: off
