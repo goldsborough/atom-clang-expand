@@ -1,5 +1,10 @@
 {
   "atom-workspace atom-text-editor[data-grammar~='cpp']": {
-    "alt-e": "atom-clang-expand:expand"
+    "alt-e": "atom-clang-expand:expand",
+    "alt-u": "atom-clang-expand:unexpand",
+    "cmd-alt-g": "atom-clang-expand:go-to-declaration",
+    "cmd-alt-h": "atom-clang-expand:go-to-definition",
+    "cmd-alt-a": "atom-clang-expand:show-declaration",
+    "cmd-alt-s": "atom-clang-expand:show-definition"
   }
 }
