@@ -1,5 +1,9 @@
 #include <vector>
 
+int ret() {
+  return 42;
+}
+
 inline int f(int x) {
   std::vector<int> v;
   v.emplace_back(v.size());
