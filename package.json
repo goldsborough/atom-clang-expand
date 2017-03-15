@@ -5,7 +5,7 @@
   "description": "Expand functions, methods and macros in C and C++.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": [
+    "atom-workspace atom-text-editor[data-grammar$='cpp'], atom-workspace atom-text-editor[data-grammar$='c'], atom-workspace atom-text-editor[data-grammar$='objc']": [
       "atom-clang-expand:expand",
       "atom-clang-expand:unexpand",
       "atom-clang-expand:go-to-definition",
