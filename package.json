@@ -8,6 +8,7 @@
     "atom-workspace atom-text-editor[data-grammar$='cpp'], atom-workspace atom-text-editor[data-grammar$='c'], atom-workspace atom-text-editor[data-grammar$='objc']": [
       "atom-clang-expand:expand",
       "atom-clang-expand:unexpand",
+      "atom-clang-expand:unexpand-all",
       "atom-clang-expand:go-to-definition",
       "atom-clang-expand:go-to-declaration",
       "atom-clang-expand:show-definition",
