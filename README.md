@@ -15,3 +15,24 @@ Enables:
 * `atom-clang-expand:go-to-definition`: Goes to the definition of the function under the cursor.
 * `atom-clang-expand:show-declaration`: Displays the declaration of the function under the cursor in a widget.
 * `atom-clang-expand:show-definition`: Displays the definition of the function under the cursor in a widget.
+
+This package will watch out for a `.clang-expand` file at the root of your
+project, in YAML format, with the following schema:
+
+```yaml
+---
+sources: Single glob pattern
+  - Or list of glob patterns
+  - to find source files,
+  - absolute or relative to the project root, e.g.:
+  - src/**/*.cpp
+  - Note that the root is always searched.
+
+extra:
+  - List of flags
+  - to pass to the compiler
+  - to compile your source files, e.g.:
+  - -I/path/to/headers
+  - -std=c++14
+...
+```
