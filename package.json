@@ -1,13 +1,12 @@
 {
   "name": "atom-clang-expand",
+  "description": "A clang tool for happy refactoring without source-code gymnastics",
   "main": "./lib/atom-clang-expand",
   "version": "0.0.0",
   "description": "Expand functions, methods and macros in C and C++.",
   "keywords": ["clang", "llvm", "tool", "refactoring", "c", "c++"],
   "activationCommands": {
-    "atom-workspace atom-text-editor[data-grammar$='cpp'],
-     atom-workspace atom-text-editor[data-grammar$='c'],
-     atom-workspace atom-text-editor[data-grammar$='objc']": [
+    "atom-workspace atom-text-editor[data-grammar$='cpp'], atom-workspace atom-text-editor[data-grammar$='c'], atom-workspace atom-text-editor[data-grammar$='objc']": [
       "atom-clang-expand:expand",
       "atom-clang-expand:unexpand",
       "atom-clang-expand:unexpand-all",
@@ -17,7 +16,14 @@
       "atom-clang-expand:show-declaration"
     ]
   },
-  "repository": "https://github.com/goldsborough/atom-clang-expand",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goldsborough/atom-clang-expand"
+  },
+  "bugs": {
+    "url": "https://github.com/goldsborough/atom-clang-expand/issues"
+  },
+  "homepage": "https://github.com/goldsborough/atom-clang-expand",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
