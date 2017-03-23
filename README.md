@@ -1,7 +1,7 @@
 # :dragon: atom-clang-expand
 
 <p align="center">
-  <img src="https://github.com/goldsborough/clang-expand/blob/master/extra/clang-expand.gif">
+  <img src="https://github.com/goldsborough/clang-expand/raw/master/extra/clang-expand.gif">
   <br><br>
   An atom integration of <a href="https://github.com/goldsborough/clang-expand">clang-expand</a>.
 </p>
