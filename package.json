@@ -1,10 +1,16 @@
 {
   "name": "atom-clang-expand",
-  "description": "A clang tool for happy refactoring without source-code gymnastics",
+  "description": "Expand functions, methods and macros in C and C++.",
   "main": "./lib/atom-clang-expand",
   "version": "0.0.0",
-  "description": "Expand functions, methods and macros in C and C++.",
-  "keywords": ["clang", "llvm", "tool", "refactoring", "c", "c++"],
+  "keywords": [
+    "clang",
+    "llvm",
+    "tool",
+    "refactoring",
+    "c",
+    "c++"
+  ],
   "activationCommands": {
     "atom-workspace atom-text-editor[data-grammar$='cpp'], atom-workspace atom-text-editor[data-grammar$='c'], atom-workspace atom-text-editor[data-grammar$='objc']": [
       "atom-clang-expand:expand",
@@ -28,5 +34,14 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "command-exists": "^1.2.2",
+    "glob": "^7.1.1",
+    "yaml-js": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-google": "^0.7.1"
+  }
 }
