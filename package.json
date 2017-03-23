@@ -2,7 +2,7 @@
   "name": "atom-clang-expand",
   "description": "Expand functions, methods and macros in C and C++.",
   "main": "./lib/atom-clang-expand",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
     "clang",
     "llvm",
